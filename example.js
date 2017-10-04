@@ -14,11 +14,7 @@ bot.on("messageCreate", (msg) => { // When a message is created
     } else if(msg.content === "!pong") { // Otherwise, if the message is "!pong"
         bot.createMessage(msg.channel.id, "Ping!");
         // Respond with "Ping!"
-    }
-});
-
-bot.on("messageCreate", (msg) => {
-	if(msg.content === "!weather") {
+    } else if(msg.content === "!weather") {
 		bot.createMessage(msg.channel.id, "The weather is nice");
 	}
 });
